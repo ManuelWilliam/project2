@@ -1,0 +1,414 @@
+/*
+GLOBALES
+*/
+
+* {
+    /*con este codigo reemplazamos al archivo CSS reset*/
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial;
+    font-size: 13px;
+}
+
+a {
+    text-decoration: none;
+    /*para quitar el subrayado de la linea*/
+}
+h2, h3{
+    font-family: Helvetica;
+    font-weight: bold;
+    color:black;
+}
+
+h2{
+    margin-bottom: 20px;
+    font-size: 24px;
+    border-left: 5px solid black;
+    padding-left: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+p{
+    font-size: 18px;
+}
+
+.div-web{
+    width: 1024px;
+    margin-left: auto;
+    margin-right:auto;
+}
+/*
+HEADER
+*/
+
+header {
+    background-color: black;
+    display: flex;
+    /*ordena los elementos del header uno al lado del otro en horizontal
+    esto se aplica siempre al padre de los elementos contenidos o que se quiere que se alineen*/
+    justify-content: space-between;
+    /*alinea los elementos en el eje horizontal, colocando espacios horizontales iguales entre cada elemento */
+    align-items: center;
+    /*alinea los elementos del header en el eje vertical*/
+    height: 80px;
+    /*se define la altura del header*/
+    padding-right: 35px;
+    padding-left: 35px;
+    /*se puede declarar las lineas de arriba de la siguiente forma
+    padding: 0 20px;
+    */
+}
+
+header .logo {
+    font-size: 32px;
+    font-weight: bold;
+    color:white;
+}
+
+header ul {
+    display: flex;
+}
+
+header a {
+    margin-left: 25px;
+    font-size: 16px;
+    color: #c7c7c7;
+}
+
+header a:hover {
+    color: white;
+}
+
+header .fa-bars {
+    font-size: 24px;
+    color:white;
+    display: none;
+}
+/*
+MAIN
+*/
+
+/*
+CARATULA
+*/
+.sec-caratula{
+    padding: 35px;
+}
+
+.div-caratula{
+    display: flex;
+}
+
+.div-caratula img{
+    border-radius: 100%;
+    border-width:5px;
+    border-style: solid;
+    border-color: #c7c7c7;
+}
+
+.div-biografia{
+    padding: 40px;
+}
+
+.div-biografia ul{
+    display: flex;
+ }
+
+.div-biografia li{
+    margin-right: 10px;
+    margin-top: 15px;
+    font-size: 18px;   
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 100%;
+    line-height: 40px;
+}
+
+.icon-linkedin{
+    background-color: #0077B5;
+}
+
+.icon-github{
+    background-color: black;
+}
+
+.icon-twitter{
+    background-color: #1EA1F2;
+}
+
+.icon-skype{
+    background-color: #0495E2;
+}
+
+.div-biografia a{
+    color: aliceblue; 
+}
+
+.div-biografia p{
+    color: black; 
+}
+
+/*
+PORTAFOLIO
+*/
+
+.sec-portafolio{
+    padding: 35px;
+}
+
+.div-portafolio{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+article{
+    position: relative; 
+    margin-bottom: 20px; 
+}    
+
+article img{
+    width: 300px;
+    height: 205px;
+    border: 10px solid #F0F0F0;
+}
+
+article .div-detalle {
+    border: 10px;
+    padding: 10px;
+}
+
+article .div-detalle-fondo{
+    position: absolute;
+    left:10px;
+    top: 10px;
+    padding: 20px;
+    width: 280px;
+    height: 185px;
+    background: rgba(0,0,0,.4);
+    display: none;
+}
+
+article .div-detalle-fondo h3, p{
+    color: white;
+}   
+
+article .div-detalle-fondo h3{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+article .div-detalle-fondo p{
+    color: white;
+    font-size: 13px;
+}
+
+article .div-detalle-fondo ul{
+    display: flex;
+}
+
+article .div-detalle-fondo ul li{
+    color:white;
+    background-color: #4C2358;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-top: 10px;
+    height: 20px;
+    width: 70px;
+    text-align: center;
+    line-height: 20px;
+}
+
+article:hover img{
+    border: 10px solid #42704E;
+}
+
+article:hover .div-detalle-fondo{
+    display: block;
+}
+
+/*
+HABILIDADES
+*/
+
+.sec-habilidades{
+    padding: 35px;
+}
+
+.div-habilidades{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div-barra1{
+    display: flex;
+    padding-bottom: 24px;
+}
+
+.div-barra1 h3{
+    width: 70px;
+    font-size: 13px;
+}
+
+.div-barra2{
+    position: relative;
+    background-color: #4C2358;
+    width: 389px;
+    height: 20px;
+    margin-right: 15px;
+    border-radius: 15px;
+}
+
+.div-barra2 div{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50px;
+    height: 20px;
+    background-color: #42704E;
+    border-radius: 15px;
+}
+
+.div-barra2 .div-barra3-a{
+    width: 150px;
+}
+
+.div-barra2 .div-barra3-b{
+    width: 120px;
+}
+
+.div-barra2 .div-barra3-c{
+    width: 190px;
+}
+
+.div-barra2 .div-barra3-d{
+    width: 100px;
+}
+
+.div-barra2 .div-barra3-e{
+    width: 50px;
+}
+
+.div-barra2 .div-barra3-f{
+    width: 250px;
+}
+
+.div-barra2 .div-barra3-g{
+    width: 10px;
+}
+
+.div-barra2 .div-barra3-h{
+    width: 80px;
+}
+
+.div-barra2 .div-barra3-i{
+    width: 150px;
+}
+
+.div-barra2 .div-barra3-j{
+    width: 50px;
+}
+
+.div-barra2 .div-barra3-k{
+    width: 350px;
+}
+
+.div-barra2 .div-barra3-l{
+    width: 200px;
+}
+
+.div-barra2 .div-barra3-m{
+    width: 150px;
+}
+
+.div-barra2 .div-barra3-n{
+    width: 40px;
+}
+
+.div-barra2 .div-barra3-o{
+    width: 350px;
+}
+/*
+FOOTER
+*/
+
+footer{
+    background-color: black;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 34px;
+}
+
+footer p{
+    font-size: 11px;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 1024px) {
+    .div-web{
+        width: 901px;
+    }
+    
+    header .logo {
+        font-size: 25px;
+    }
+    
+    header a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 900px) {
+    .div-web{
+        width: 700px;
+    }
+    header .logo {
+        font-size: 20px;
+    }
+    
+    header a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 700px) {
+    .div-web{
+        width: 541px;
+    }
+
+    header {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    header .logo {
+        font-size: 17px;
+    }
+    
+    header a {
+        margin-left: 15px;
+        font-size: 10px;
+    }
+}
+@media (max-width: 541px) {
+    .div-web{
+        width: 540px;
+    }
+    header nav{
+        display: none;
+    }
+
+    header .fa-bars {
+        display: block;
+    }
+}
