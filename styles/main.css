@@ -18,13 +18,14 @@ a {
     text-decoration: none;
     /*para quitar el subrayado de la linea*/
 }
-h2, h3{
+
+h2, h3 {
     font-family: Helvetica;
     font-weight: bold;
-    color:black;
+    color: black;
 }
 
-h2{
+h2 {
     margin-bottom: 20px;
     font-size: 24px;
     border-left: 5px solid black;
@@ -35,21 +36,32 @@ ul {
     list-style: none;
 }
 
-p{
+p {
     font-size: 18px;
 }
 
-.div-web{
+.div-web {
     width: 1024px;
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
 }
+
 /*
 HEADER
 */
 
 header {
     background-color: black;
+    position: relative;
+}
+
+header .fb-share-button {
+    position: absolute;
+    right: 35px;
+    top: 5px;
+}
+
+.inner {
     display: flex;
     /*ordena los elementos del header uno al lado del otro en horizontal
     esto se aplica siempre al padre de los elementos contenidos o que se quiere que se alineen*/
@@ -64,12 +76,15 @@ header {
     /*se puede declarar las lineas de arriba de la siguiente forma
     padding: 0 20px;
     */
+    position: relative;
 }
+
+.fb-share-button {}
 
 header .logo {
     font-size: 32px;
     font-weight: bold;
-    color:white;
+    color: white;
 }
 
 header ul {
@@ -88,9 +103,10 @@ header a:hover {
 
 header .fa-bars {
     font-size: 24px;
-    color:white;
+    color: white;
     display: none;
 }
+
 /*
 MAIN
 */
@@ -98,33 +114,34 @@ MAIN
 /*
 CARATULA
 */
-.sec-caratula{
+
+.sec-caratula {
     padding: 35px;
 }
 
-.div-caratula{
+.div-caratula {
     display: flex;
 }
 
-.div-caratula img{
+.div-caratula img {
     border-radius: 100%;
-    border-width:5px;
+    border-width: 5px;
     border-style: solid;
     border-color: #c7c7c7;
 }
 
-.div-biografia{
+.div-biografia {
     padding: 40px;
 }
 
-.div-biografia ul{
+.div-biografia ul {
     display: flex;
- }
+}
 
-.div-biografia li{
+.div-biografia li {
     margin-right: 10px;
     margin-top: 15px;
-    font-size: 18px;   
+    font-size: 18px;
     width: 40px;
     height: 40px;
     text-align: center;
@@ -132,50 +149,50 @@ CARATULA
     line-height: 40px;
 }
 
-.icon-linkedin{
+.icon-linkedin {
     background-color: #0077B5;
 }
 
-.icon-github{
+.icon-github {
     background-color: black;
 }
 
-.icon-twitter{
+.icon-twitter {
     background-color: #1EA1F2;
 }
 
-.icon-skype{
+.icon-skype {
     background-color: #0495E2;
 }
 
-.div-biografia a{
-    color: aliceblue; 
+.div-biografia a {
+    color: aliceblue;
 }
 
-.div-biografia p{
-    color: black; 
+.div-biografia p {
+    color: black;
 }
 
 /*
 PORTAFOLIO
 */
 
-.sec-portafolio{
+.sec-portafolio {
     padding: 35px;
 }
 
-.div-portafolio{
-    display:flex;
+.div-portafolio {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-article{
-    position: relative; 
-    margin-bottom: 20px; 
-}    
+article {
+    position: relative;
+    margin-bottom: 20px;
+}
 
-article img{
+article img {
     width: 300px;
     height: 205px;
     border: 10px solid #F0F0F0;
@@ -186,37 +203,37 @@ article .div-detalle {
     padding: 10px;
 }
 
-article .div-detalle-fondo{
+article .div-detalle-fondo {
     position: absolute;
-    left:10px;
+    left: 10px;
     top: 10px;
     padding: 20px;
     width: 280px;
     height: 185px;
-    background: rgba(0,0,0,.4);
+    background: rgba(0, 0, 0, .4);
     display: none;
 }
 
-article .div-detalle-fondo h3, p{
+article .div-detalle-fondo h3, p {
     color: white;
-}   
+}
 
-article .div-detalle-fondo h3{
+article .div-detalle-fondo h3 {
     margin-top: 10px;
     font-size: 16px;
 }
 
-article .div-detalle-fondo p{
+article .div-detalle-fondo p {
     color: white;
     font-size: 13px;
 }
 
-article .div-detalle-fondo ul{
+article .div-detalle-fondo ul {
     display: flex;
 }
 
-article .div-detalle-fondo ul li{
-    color:white;
+article .div-detalle-fondo ul li {
+    color: white;
     background-color: #4C2358;
     border-radius: 15px;
     margin-right: 10px;
@@ -227,11 +244,11 @@ article .div-detalle-fondo ul li{
     line-height: 20px;
 }
 
-article:hover img{
+article:hover img {
     border: 10px solid #42704E;
 }
 
-article:hover .div-detalle-fondo{
+article:hover .div-detalle-fondo {
     display: block;
 }
 
@@ -239,26 +256,26 @@ article:hover .div-detalle-fondo{
 HABILIDADES
 */
 
-.sec-habilidades{
+.sec-habilidades {
     padding: 35px;
 }
 
-.div-habilidades{
+.div-habilidades {
     display: flex;
     flex-wrap: wrap;
 }
 
-.div-barra1{
+.div-barra1 {
     display: flex;
     padding-bottom: 24px;
 }
 
-.div-barra1 h3{
+.div-barra1 h3 {
     width: 70px;
     font-size: 13px;
 }
 
-.div-barra2{
+.div-barra2 {
     position: relative;
     background-color: #4C2358;
     width: 389px;
@@ -267,7 +284,7 @@ HABILIDADES
     border-radius: 15px;
 }
 
-.div-barra2 div{
+.div-barra2 div {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -277,186 +294,238 @@ HABILIDADES
     border-radius: 15px;
 }
 
-.div-barra2 .div-barra3-a{
+.div-barra2 .div-barra3-a {
     width: 150px;
 }
 
-.div-barra2 .div-barra3-b{
+.div-barra2 .div-barra3-b {
     width: 120px;
 }
 
-.div-barra2 .div-barra3-c{
+.div-barra2 .div-barra3-c {
     width: 190px;
 }
 
-.div-barra2 .div-barra3-d{
+.div-barra2 .div-barra3-d {
     width: 100px;
 }
 
-.div-barra2 .div-barra3-e{
+.div-barra2 .div-barra3-e {
     width: 50px;
 }
 
-.div-barra2 .div-barra3-f{
+.div-barra2 .div-barra3-f {
     width: 250px;
 }
 
-.div-barra2 .div-barra3-g{
+.div-barra2 .div-barra3-g {
     width: 10px;
 }
 
-.div-barra2 .div-barra3-h{
+.div-barra2 .div-barra3-h {
     width: 80px;
 }
 
-.div-barra2 .div-barra3-i{
+.div-barra2 .div-barra3-i {
     width: 150px;
 }
 
-.div-barra2 .div-barra3-j{
+.div-barra2 .div-barra3-j {
     width: 50px;
 }
 
-.div-barra2 .div-barra3-k{
+.div-barra2 .div-barra3-k {
     width: 350px;
 }
 
-.div-barra2 .div-barra3-l{
+.div-barra2 .div-barra3-l {
     width: 200px;
 }
 
-.div-barra2 .div-barra3-m{
+.div-barra2 .div-barra3-m {
     width: 150px;
 }
 
-.div-barra2 .div-barra3-n{
+.div-barra2 .div-barra3-n {
     width: 40px;
 }
 
-.div-barra2 .div-barra3-o{
+.div-barra2 .div-barra3-o {
     width: 350px;
 }
 
 /*
 FORMULARIO
 */
-.row{
+
+.form_father {
+    /*border: 3px solid brown;*/
     display: flex;
-    padding: 20px 0;
-    margin-bottom: 20px;
-    border-style: solid;
 }
 
-.right{
-    padding-left: 10px;
-    border-style: solid;
-    display: block1;
+.form_child_left {
+    display: flex1;
+    /*border: 3px solid black;*/
+    border-right: 1px solid #D5D5D5;
+    width: 70%;
 }
 
-.left{
-    padding-right: 10px;
-    display: block1;
+.form_child {
+    display: flex;
+}
+
+.left {
     padding-left: 32px;
+    padding-right: 12px;
+    /*border: 3px solid blue;*/
+    width: 50%;
 }
 
-label{
+.right {
+    padding-left: 11px;
+    padding-right: 32px;
+    /*border: 3px solid green;*/
+    width: 50%;
+}
+
+.row {
+    margin-bottom: 20px;
+    /*border: 3px solid red;*/
+}
+
+label {
     display: block;
+    padding-bottom: 10px;
 }
 
 input {
-    padding: 10px;
     border: 1px solid #cdcdcd;
-    width: 305px;
+    width: 100%;
     height: 40px;
 }
 
-select  {
+select {
     height: 40px;
-    width: 302px;
+    width: 100%;
 }
 
-ul{
+ul {
     display: flex;
 }
 
-ul input{
-    width: 10px;
-    height: 10px;
+.row ul li input {
+    width: 30px;
+    height: 15px;
 }
 
+.row ul li {
+    display: flex;
+}
+
+.comentario {
+    width: 100%;
+    padding: 0 32px;
+}
+
+textarea {
+    width: 100%;
+}
+
+ .form_child_right {
+    padding-left: 20px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+button{
+    background-color: #42704E;
+    color: white;
+    width: 150px;
+    height: 50px;
+}
+
+.form_child_right p {
+    color: black;
+    font-size: 13px;
+    padding-top: 15px;
+}
+
+.form_child_right h4 {
+    padding-top: 30px;
+}
 
 /*
 FOOTER
 */
 
-footer{
+footer {
     background-color: black;
     height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 34px;
+    margin-top: 50px;
 }
 
-footer p{
+footer p {
     font-size: 11px;
 }
 
 /*MEDIA QUERIES*/
+
 @media (max-width: 1024px) {
-    .div-web{
+    .div-web {
         width: 901px;
     }
-    
     header .logo {
         font-size: 25px;
     }
-    
     header a {
         font-size: 12px;
     }
 }
 
 @media (max-width: 900px) {
-    .div-web{
+    .div-web {
         width: 700px;
     }
     header .logo {
         font-size: 20px;
     }
-    
     header a {
         font-size: 12px;
     }
 }
 
 @media (max-width: 700px) {
-    .div-web{
+    .div-web {
         width: 541px;
     }
-
     header {
         padding-right: 10px;
         padding-left: 10px;
     }
-
     header .logo {
         font-size: 17px;
     }
-    
     header a {
         margin-left: 15px;
         font-size: 10px;
     }
 }
+
 @media (max-width: 541px) {
-    .div-web{
+    .div-web {
         width: 540px;
     }
-    header nav{
+    header nav {
         display: none;
     }
-
     header .fa-bars {
         display: block;
     }
