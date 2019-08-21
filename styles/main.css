@@ -336,6 +336,55 @@ HABILIDADES
 .div-barra2 .div-barra3-o{
     width: 350px;
 }
+
+/*
+FORMULARIO
+*/
+.row{
+    display: flex;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-style: solid;
+}
+
+.right{
+    padding-left: 10px;
+    border-style: solid;
+    display: block1;
+}
+
+.left{
+    padding-right: 10px;
+    display: block1;
+    padding-left: 32px;
+}
+
+label{
+    display: block;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #cdcdcd;
+    width: 305px;
+    height: 40px;
+}
+
+select  {
+    height: 40px;
+    width: 302px;
+}
+
+ul{
+    display: flex;
+}
+
+ul input{
+    width: 10px;
+    height: 10px;
+}
+
+
 /*
 FOOTER
 */

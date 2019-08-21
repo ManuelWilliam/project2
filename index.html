@@ -11,6 +11,20 @@
 -->
     <link rel="stylesheet" href="./styles/main.css">
     <title>Portafolio</title>
+
+    <meta name="description" content="Portafolio personal sobre fullstack de Manuel Patrocinio">
+    <meta name="author" content="Manuel Patrocinio" />
+    <meta name="keywords" content="frontend, developer, design, fullstack, mentor, teacher" />
+    <meta name="robots" content="index, follow" />
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="MANUELPATROCINIO" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://manuelwilliam.github.io/project2/" />
+    <meta property="og:title" content="My portafolio - Manuel Patrocinio" />
+    <meta property="og:description" content="Portafolio personal sobre fullstack de Manuel Patrocinio" />
+    <meta property="og:image" content="https://picsum.photos/216/216" />
+
+
 </head>
 
 <body>
@@ -54,17 +68,17 @@
                                     <i class="fab fa-linkedin-in"></i>
                                 </a>
                             </li>
-                            <li class="icon-github" >
+                            <li class="icon-github">
                                 <a href="">
                                     <i class="fab fa-github-alt"></i>
                                 </a>
                             </li>
-                            <li class="icon-twitter" >
+                            <li class="icon-twitter">
                                 <a href="">
                                     <i class="fab fa-twitter"></i>
                                 </a>
                             </li>
-                            <li class="icon-skype" >
+                            <li class="icon-skype">
                                 <a href="">
                                     <i class="fab fa-skype"></i>
                                 </a>
@@ -350,6 +364,104 @@
                     </div>
                 </div>
             </section>
+            <section>
+                    <h2>Contáctame</h2>
+            <form action="">
+                <!--Se define un formulario para llenar datos-->
+                <div class="row">
+                    <div class="left">
+                        <label for="name">Nombre</label>
+                        <input maxlength="25" name="name" type="text" id="name" placeholder="Ingresa tu nombre"
+                            required>
+                    </div>
+                    <div class="right">
+                        <label for="last name">Apellido</label>
+                        <input maxlength="25" name="lastname" type="text" id="last name"
+                            placeholder="Ingresa tu apellido" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left">
+                        <label for="email">Email</label>
+                        <input name="email" type="email" id="email" placeholder="Ingresa tu correo" required>
+                    </div>
+                    <div class="right">
+                        <label for="cellphone">Número Celular</label>
+                        <input minlength="9" maxlength="9" name="number" type="tel" id="cellphone" placeholder="Ingresa tu número de celular"
+                        required pattern="[0-9]{9}">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left">
+                        <label for="Password">Password</label>
+                        <input name="password" type="password" id="password" required>
+                    </div>
+                    <div class="right">
+                        <label for="">Pais</label>
+                        <select name="country" id="country" required>
+                            <option value="">Selecciona tu país</option>
+                            <option value="1">Perú</option>
+                            <option value="2">Chile</option>
+                            <option value="3"">Argentina</option>
+                            <option value=" 4">Uruguay</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left">
+                        <label for="sex">Sexo</label>
+                        <ul>
+                            <li>
+                                <label for="m">M</label>
+                                <input name="sex" type="radio" id="m" required>
+                            </li>
+                            <li>
+                                <label for="f">F</label>
+                                <input name="sex" type="radio" id="f" required>
+                            </li>
+                        </ul>
+                        <option value=""></option>
+                    </div>
+                    <div class="right">
+                        <label>Hobbies</label>
+                        <!--
+                            codigo para generar los 3 li con propiedades y todo
+                            ul>li*3>input[type=checkbox]
+                        -->
+                        <ul>
+                            <li>
+                                <label for="soccer">Futbol</label>
+                                <input name="hobbie" type="checkbox" id="soccer">
+                            </li>
+                            <li>
+                                <label for="tennis">Tenis</label>
+                                <input name="hobbie" type="checkbox" id="tennis">
+                            </li>
+                            <li>
+                                <label for="run">Correr</label>
+                                <input name="hobbie" type="checkbox" id="run">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left">
+                        <button type="reset">Limpiar</button>
+                        <input type="reset" name="" id="">
+                    </div>
+                    <div class="right">
+                        <button type="send">Enviar</button>
+                        <input type="submit" name="" id="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <label for="comment">Comentario</label>
+                        <textarea name="" id="comment" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+            </form>
+        </section>
         </main>
         <!--FOOTER-->
         <footer>
